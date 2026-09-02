@@ -59,6 +59,16 @@ If the answer is yes, this goes public as-is. If the answer is no or never
 comes, the repo stays private and remains useful as personal tooling — which is
 the outcome it was scoped for regardless.
 
+## Update, 2026-09-01 — made public
+
+The harder question was taken where the note below says it belonged, and a
+response came back regarding the invention-assignment clause specifically. The
+graph and cartridge approaches in these repositories are markedly different
+from any proposal made during that employment — different substrate, different
+seam, different trust model — and on that basis both repositories were made
+public on this date. The working rule in [`CLEAN-ROOM.md`](CLEAN-ROOM.md)
+governed every line written before and after that determination.
+
 ## Note for anyone reading this later
 
 None of the above is legal advice, including to its author. It is a record of
