@@ -42,7 +42,7 @@ def test_every_graph_facing_role_is_bound() -> None:
         "plan", "build", "review_charter", "scope_epic", "handoff",
         "review_adversary", "arbitrate", "decompose", "evidence_verify",
         "triage_classify", "reconcile",
-        "validate_chunk", "validate_phase", "retro", "dispatch",
+        "validate_chunk", "validate_phase", "retro", "dispatch", "route",
     }
     arm_roles = {"work_state_arm", "work_item_arm", "docs_apply_arm"}
     unbound = (graph_roles | arm_roles) - set(resolved["skills"])
