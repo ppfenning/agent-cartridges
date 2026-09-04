@@ -52,6 +52,16 @@ def test_the_new_validation_roles_are_declared_optional() -> None:
     assert {"validate_chunk", "validate_phase", "retro", "dispatch"} <= optional
 
 
+def test_the_plan_competition_roles_are_optional_and_bound_by_local() -> None:
+    """Optional, so a team that binds none of them keeps the single-plan loop;
+    bound by `local`, so a clean clone gets the competition."""
+    resolved = resolve("local")
+    roles = {"plan_alternative", "plan_arbitrate", "plan_adversary"}
+    assert roles <= set(resolved["roles"]["optional"])
+    assert roles <= set(resolved["skills"])
+    assert resolved["skills"]["plan_arbitrate"] == "local-skills:arbitrate-plans"
+
+
 def test_a_team_may_not_loosen_merge_main_off_never(tmp_path: Path) -> None:
     """The one kind whose whole value is that no streak can ever buy it."""
     root = tmp_path / "cartridges"
