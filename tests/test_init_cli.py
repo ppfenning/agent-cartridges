@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from core.cartridge import _main, load
+from core.cartridge import _DEFAULT_CARTRIDGES_DIR, _main, load
 from core.skills import index_from_roots
 
 REPO = Path(__file__).resolve().parent.parent
